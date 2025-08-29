@@ -1,0 +1,19 @@
+
+def fibonacci(n):
+    """Return the Fibonacci series up to n."""
+    sequence = []
+    a, b = 0, 1
+    while a < n:
+        sequence.append(a)
+        a, b = b, a + b
+    return sequence
+
+
+def greet(name):
+    """Return a simple greeting."""
+    return f"Hello, {name}!"
+
+
+if __name__ == "__main__":
+    print("Fibonacci up to 50:", fibonacci(50))
+    print(greet("Alice"))
